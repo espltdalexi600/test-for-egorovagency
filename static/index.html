@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script defer src="./src/index.js"></script>
+    <script defer src="./src/timer.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="background">
+        <div class="background__left"></div>
+        <div class="background__center"></div>
+        <div class="background__right"></div>
+      </div>
+      <header class="header">
+        <div class="header__container">
+          <a href="/" class="header__logo">
+            <img src="./src/img/logo.svg" alt="logo" />
+          </a>
+        </div>
+      </header>
+      <main class="main">
+        <section class="construction">
+          <div class="construction__container">
+            <div class="construction__content">
+              <h1 class="construction__title">Under Construction</h1>
+              <p class="construction__text">
+                We're making lots of improvements and will be back soon
+              </p>
+            </div>
+            <div class="construction__timer">
+              <span class="timer">
+                <span class="timer__number timer__number--days">00</span>
+                <span class="timer__colon">:</span>
+                <span class="timer__number timer__number--hours">00</span>
+                <span class="timer__colon">:</span>
+                <span class="timer__number timer__number--minutes">00</span>
+                <span class="timer__colon">:</span>
+                <span class="timer__number timer__number--seconds">00</span>
+              </span>
+            </div>
+            <div class="construction__check">
+              <p class="construction__text">
+                Check our event page when you wait:
+              </p>
+              <a
+                href="https://egorovagency.by/#main"
+                target="_blank"
+                class="construction__event"
+              >
+                Go to the event
+                <span class="icon icon--arrow"></span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <form class="form">
+            <div class="form__wrapper">
+              <div class="form__input">
+                <input
+                  name="email"
+                  type="text"
+                  placeholder="Enter your Email and get notified"
+                />
+              </div>
+              <button name="send" type="submit" class="form__button">
+                <span class="icon icon--arrow"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+    <div class="popup">
+      <div class="popup__wrapper">
+        <h1 class="popup__title"></h1>
+        <p class="popup__body"></p>
+        <button class="popup__button">Close</button>
+        <button class="popup__cross">
+          <span class="icon icon--cross"></span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
